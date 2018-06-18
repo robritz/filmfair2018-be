@@ -27,11 +27,12 @@ const cameraTypes = {
 
 const cameras = [
   {
+    id: 0,
     name: 'Yashica Mat124G',
     category: categories.humanPortraitColor,
     data:{
       type: cameraTypes.tlr,
-      film: '35mm Kodak TMax',
+      film: '120 Kodak Portra',
       iso: 400,
       lens: '80mm f3.5',
       age: '1970-1986'
@@ -42,9 +43,15 @@ const cameras = [
       uniqueness: 3,
       again: 3
     },
+    images:[
+      'yashica1.jpg',
+      'yashica2.jpg',
+      'yashica3.jpg'
+    ],
     notes: `Lorem ipsum dolor`
   },
   {
+    id: 1,
     name: 'Kodak Retina IIa',
     category: categories.archColor,
     data:{
@@ -60,6 +67,10 @@ const cameras = [
       uniqueness: 3,
       again: 2
     },
+    images:[
+      'retina1.jpg',
+      'retina2.jpg'
+    ],
     notes: `Lorem ipsum dolor`
   }
 ];
