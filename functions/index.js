@@ -5,7 +5,7 @@ const app = express();
 const cameras = require('./cameras');
 
 app.get('/getCameras', (request, response) => {
-  //response.set('Cache-Control', 'public, max-age=300, s-maxage=600');//600 = 10 minutes
+  response.set('Cache-Control', 'public, max-age=0, s-maxage=6000');//600 = 10 minutes
   response.json(cameras);
 });
 
